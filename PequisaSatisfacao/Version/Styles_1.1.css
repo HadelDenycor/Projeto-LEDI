@@ -1,0 +1,48 @@
+body{
+	background: url(bg.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+h1{
+	font-family: impact, sans-serif;
+	color: #33558F;
+	font-size: 40px;
+	text-align: center;
+}
+#site {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 625px;
+	padding: 20px;
+	margin-left: -400px;
+	background: #FFF;
+	background: rgba(255,255,255,0.8);
+}
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 21px 24px;
+	transition: 0.3s;
+}
+div.tab button:hover {
+	background-color: #ddd;
+}
+div.tab button.active {
+	background-color: #ccc;
+}
+.tabContent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}

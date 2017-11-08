@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> LEDI </title>
+</head>
+
+<body>
+<div id="site">
+	<h1> Pesquisa de satisfação </h1>
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Pesquisa')">Pesquisa</button>
+		<button class="tablinks" onclick="openTab(event, 'Resultados')">Resultados</button>
+	</div>
+	<div id="Pesquisa" class="tabContent">
+		<button onClick="addOtimo()">
+		<img src="otimo.png" width="90" height="90" alt="">
+		<br><b>Otimo</b>
+		</button>
+	
+		<button onClick="addBom()">
+		<img src="bom.png" width="90" height="90" alt="">
+		<br><b>Bom</b>
+		</button>
+	
+		<button onClick="addReg()">
+		<img src="regular.png" width="90" height="90" alt="">
+		<br><b>Regular</b>
+		</button>
+	
+		<button onClick="addRuim()">
+		<img src="ruim.png" width="90" height="90" alt="">
+		<br><b>Ruim</b>
+		</button>
+	
+		<button onClick="addPess()">
+		<img src="pessimo.png" width="90" height="90" alt="">
+		<br><b>Pessimo</b>
+		</button>
+		<br><br>
+	</div>
+	<div id="Resultados" class="tabContent">
+			<button onClick="showRes()">Exibir resultados</button>
+			<br><br>
+			<div id="otimoDis"></div>
+			<div id="bomDis"></div>
+			<div id="regDis"></div>
+			<div id="ruimDis"></div>
+			<div id="pessDis"></div>
+			<br>
+			<button onClick="download()">Salvar</button>
+	</div>
+</div>
+<script type="text/javascript">
+		otimo = 0;
+		bom = 0;
+		reg = 0;
+		ruim = 0;
+		pess = 0;
+		arqDown = "";
+		
+		function addOtimo(){
+			otimo++;
+		}
+		function addBom(){
+			bom++;
+		}
+		function addReg(){
+			reg++;
+		}
+		function addRuim(){
+			ruim++;
+		}
+		function addPess(){
+			pess++;
+		}
+		
+		function showRes(){
+			total = otimo + bom + reg + ruim + pess;
+			arqDown = "Otimo: "+otimo.toString()+"\r\nBom: "+bom.toString()+"\r\nRegular: "+reg.toString()+"\r\nRuim: "+ruim.toString()+"\r\nPessimo: "+pess.toString();
+			document.getElementById('otimoDis').innerHTML = 'Ótimo:&ensp;&ensp;<meter min=0 max="'+total+'" low=1 high=1 optimum=2 value="'+otimo+'"></meter>&ensp;'+otimo+' votos.';
+			document.getElementById('bomDis').innerHTML = 'Bom:&ensp;&ensp;&ensp;<meter min=0 max="'+total+'" low=1 high=1 optimum=2 value="'+bom+'"></meter>&ensp;'+bom+' votos.';
+			document.getElementById('regDis').innerHTML = 'Regular: <meter min=0 max="'+total+'" low=1 high=1 optimum=2 value="'+reg+'"></meter>&ensp;'+reg+' votos.';
+			document.getElementById('ruimDis').innerHTML = 'Ruim: &ensp;&ensp;<meter min=0 max="'+total+'" low=1 high=1 optimum=2 value="'+ruim+'"></meter>&ensp;'+ruim+' votos.';
+			document.getElementById('pessDis').innerHTML = 'Péssimo: <meter min=0 max="'+total+'" low=1 high=1 optimum=2 value="'+pess+'"></meter>&ensp;'+pess+' votos.';
+		} 				
+		
+		function openTab(evt, tabName) {
+			// Declare all variables
+			var i, tabContent, tablinks;
+			// Get all elements with class="tabContent" and hide them
+			tabContent = document.getElementsByClassName("tabContent");
+			for (i = 0; i < tabContent.length; i++) {
+				tabContent[i].style.display = "none";
+			}
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		function download(){
+			var a = document.createElement('a');
+			var blob = new Blob([arqDown], {type:'text/plain'});
+			a.href = window.URL.createObjectURL(blob);
+			a.download = "ResultadosPesquisa";
+			a.click();
+		}
+</script>
+	
+<style type="text/css">
+		#smiles {
+			width: 100vw;
+			height: 50vh;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center
+		}
+		#results {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center
+		}
+		h1{
+			font-family: impact, sans-serif;
+			color: #33558F;
+			font-size: 40px;
+			text-align: center;
+		}
+		.box-chart {
+			width: 100%;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		
+		body {
+			background: url(bg.jpg) no-repeat center top fixed;
+		
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
+		#site {
+			position: absolute;
+			top: 40px;
+			left: 50%;
+			width: 650px;
+			padding: 20px;
+			margin-left: -300px;
+			background: #FFF;
+			background: rgba(255,255,255,0.8);
+		}
+		div.tab {
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+		}
+		div.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+		}
+		div.tab button:hover {
+			background-color: #ddd;
+		}
+		div.tab button.active {
+			background-color: #ccc;
+		}
+		.tabContent {
+			display: none;
+			padding: 6px 12px;
+			border: 1px solid #ccc;
+			border-top: none;
+		}
+		table, td, tr {
+			border:solid 1px #000; padding:5px;
+		}
+	</style>
+</body>
+</html>

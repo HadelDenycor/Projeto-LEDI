@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title> LEDI </title>
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<script language="JavaScript" src="Scripts.js"></script>
+</head>
+<body>
+	<div id="site">
+		<h1> Pesquisa de satisfação </h1>
+		<div class="tab">
+			<button class="tabLinks" onclick="openTab(event, 'Pesquisa')">Pesquisa</button>
+			<button class="tabLinks" onclick="openTab(event, 'Resultados')">Resultados</button>
+		</div>
+		<div id="Pesquisa" class="tabContent">
+			<button class="btn btn-otimo" onClick="addOtimo()">
+				<img src="otimo.png" width="125" height="125" alt="">
+				<br><b>Ótimo</b>
+			</button>
+			<button class="btn btn-bom" onClick="addBom()">
+				<img src="bom.png" width="125" height="125" alt="">
+				<br><b>Bom</b>
+			</button>
+			<button class="btn btn-reg" onClick="addReg()">
+				<img src="regular.png" width="125" height="125" alt="">
+				<br><b>Regular</b>
+			</button>
+			<button class="btn btn-ruim" onClick="addRuim()">
+				<img src="ruim.png" width="125" height="125" alt="">
+				<br><b>Ruim</b>
+			</button>
+		</div>
+		<div id="Resultados" class="tabContent">
+			<button onClick="showRes()">Exibir resultados</button>
+			<br><br>
+			<div id="otimoDis"></div>
+			<div id="bomDis"></div>
+			<div id="regDis"></div>
+			<div id="ruimDis"></div>
+			<br>
+			<button onClick="download()">Salvar</button>
+		</div>
+	</div>
+</body>
+</html>

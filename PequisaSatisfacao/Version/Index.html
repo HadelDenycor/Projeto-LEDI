@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title> LEDI </title>
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<script language="JavaScript" src="Scripts.js"></script>
+</head>
+<body>
+	<div id="site">
+		<h1> Pesquisa de satisfação </h1>
+		<div class="tab">
+			<button class="tabLinks" onclick="openTab(event, 'Pesquisa')">Pesquisa</button>
+			<button class="tabLinks" onclick="openTab(event, 'Resultados')">Resultados</button>
+		</div>
+		<div id="Pesquisa" class="tabContent">
+			<input type="button" id="btnOtimo" class="btn-otimo" onClick="addOtimo()">
+			<input type="button" id="btnBom" class="btn-bom" onClick="addBom()">
+			<input type="button" id="btnReg" class="btn-reg" onClick="addReg()">
+			<input type="button" id="btnRuim" class="btn-ruim" onClick="addRuim()">
+		</div>
+		<div id="Resultados" class="tabContent">
+			<button onClick="showRes()">Exibir resultados</button>
+			<br><br>
+			<div id="otimoDis"></div>
+			<div id="bomDis"></div>
+			<div id="regDis"></div>
+			<div id="ruimDis"></div>
+			<br>
+			<button onClick="download()">Salvar</button>
+		</div>
+	</div>
+</body>
+</html>

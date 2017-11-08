@@ -1,0 +1,8 @@
+1.0 -	REMOVIDO	Péssimo
+	ADICIONADO	Data e Hora
+1.1 -	HTML
+		ALTERADO	Tamanho dos botões
+	CSS
+		ALTERADO	#site || div.tab button (PADDING x0.5)
+1.2 -	HTML + CSS
+		ADICIONADO	Cor ao clicar nos botões de votação

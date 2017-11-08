@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<!--Título da página e importação dos scripts e css-->
+	<meta charset="utf-8">
+	<title> LEDI </title>
+	<link rel="stylesheet" type="text/css" href="css/Styles.css">
+	<script language="JavaScript" src="js/Scripts.js"></script>
+</head>
+<body>
+	<div id="all">
+	<img src="image/empreende.png" width="172" height="108" align="left" />
+	<img src="image/Prefeitura-SJC.png" width="172" height="108" align="right" />
+	<br>
+	<div id="site">
+		<!--Título-->
+		<h1> Pesquisa de satisfação </h1>
+		<!-- Botões da aba (Resquisa e Resultados) -->
+		<div class="tab">
+			<button class="tabLinks" onclick="openTab(event, 'Pesquisa')">Pesquisa</button>
+			<button class="tabLinks" onclick="openTab(event, 'Resultados')">Resultados</button>
+		</div>
+		<!-- Botões da votação (ótimo, bom, regular, ruim) da aba Pesquisa-->
+		<div id="Pesquisa" class="tabContent">
+			<input type="button" id="btnOtimo" class="btn-otimo" onClick="addOtimo()">
+			<input type="button" id="btnBom" class="btn-bom" onClick="addBom()">
+			<input type="button" id="btnReg" class="btn-reg" onClick="addReg()">
+			<input type="button" id="btnRuim" class="btn-ruim" onClick="addRuim()">
+		</div>
+		<!-- Aba de resultados, com botão "Exibir resultados" e "Salvar" -->
+		<div id="Resultados" class="tabContent">
+			<button onClick="showRes()">Exibir resultados</button>
+			<br><br>
+			<div id="otimoDis"></div>
+			<div id="bomDis"></div>
+			<div id="regDis"></div>
+			<div id="ruimDis"></div>
+			<br>
+			<button onClick="download()">Salvar</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
