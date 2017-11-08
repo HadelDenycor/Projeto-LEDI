@@ -1,0 +1,410 @@
+<html>
+<head>
+	<title> LEDI </title>
+	<link rel="stylesheet" type="text/css" href="css/Styles.css">
+	<script src="js/Chart.min.js"></script>
+	<script src="js/FileSaver.min.js"></script>
+</head>
+<body>
+  <div id="site">
+		<img src="images/logo/empreende.png" width="172" height="108" align="left" />
+		<img src="images/logo/Prefeitura-SJC.png" width="172" height="108" align="right" />
+		<br>
+    <h1>Votação popular- Logomarcas</h1><br>
+    <div class="tab">
+      <button class="tabLinks" onclick="openTab(event, 'Votacao')">Votação</button>
+			<button class="tabLinks" onclick="openTab(event, 'Resultados')">Resultados</button>
+    </div>
+    <div id="Votacao" class="tabContent">
+			<input type="button" id="btnAlvaro" class="btn-alvaro" onClick="addAlvaro()" label="teste alvaro">
+			<label class="lblAlvaro" for="btnAlvaro">Alvaro Gonçalves</label>
+      <input type="button" id="btnAna" class="btn-ana" onClick="addAna()">
+			<label class="lblAna" for="btnAna">Ana Berling</label>
+      <input type="button" id="btnAntonio" class="btn-antonio" onClick="addAntonio()">
+			<label class="lblAntonio" for="btnAntonio">Antonio Palma</label>
+      <input type="button" id="btnDom" class="btn-dom" onClick="addDom()">
+			<label class="lblDom" for="btnDom">Dom Pedro</label>
+      <input type="button" id="btnElizabete" class="btn-elizabete" onClick="addElizabete()">
+			<label class="lblElizabete" for="btnElizabete">Elizabete de Paula</label>
+      <input type="button" id="btnGeraldo" class="btn-geraldo" onClick="addGeraldo()">
+			<label class="lblGeraldo" for="btnGeraldo">Geraldo de Almeida</label>
+      <input type="button" id="btnHelioA" class="btn-helioa" onClick="addHelioA()">
+			<label class="lblHelioA" for="btnHelioA">Helio Augusto</label>
+      <input type="button" id="btnHelioW" class="btn-heliow" onClick="addHelioW()">
+			<label class="lblHelioW" for="btnHelioW">Helio Walter</label>
+      <input type="button" id="btnHomera" class="btn-homera" onClick="addHomera()">
+			<label class="lblHomera" for="btnHomera">Homera da Silva</label>
+      <input type="button" id="btnIlga" class="btn-ilga" onClick="addIlga()">
+			<label class="lblIlga" for="btnIlga">Ilga Pusplatais</label>
+      <input type="button" id="btnJacyra" class="btn-jacyra" onClick="addJacyra()">
+			<label class="lblJacyra" for="btnJacyra">Jacyra Vieira</label>
+      <input type="button" id="btnLucia" class="btn-lucia" onClick="addLucia()">
+			<label class="lblLucia" for="btnLucia">Lucia Pereira</label>
+      <input type="button" id="btnLuzia" class="btn-luzia" onClick="addLuzia()">
+			<label class="lblLuzia" for="btnLuzia">Luzia Levina</label>
+      <input type="button" id="btnMariaA" class="btn-mariaa" onClick="addMariaA()">
+			<label class="lblMariaA" for="btnMariaA">Maria Amélia</label>
+      <input type="button" id="btnMariaO" class="btn-mariao" onClick="addMariaO()">
+			<label class="lblMariaO" for="btnMariaO">Maria Ofélia</label>
+      <input type="button" id="btnMariaR" class="btn-mariar" onClick="addMariaR()">
+			<label class="lblMariaR" for="btnMariaR">Maria Ronconi</label>
+      <input type="button" id="btnMariana" class="btn-mariana" onClick="addMariana()">
+			<label class="lblMariana" for="btnMariana">Mariana Teixeira</label>
+      <input type="button" id="btnMercedes" class="btn-mercedes" onClick="addMercedes()">
+			<label class="lblMercedes" for="btnMercedes">Mercedes Klein</label>
+      <input type="button" id="btnMoacyr" class="btn-moacyr" onClick="addMoacyr()">
+			<label class="lblMoacyr" for="btnMoacyr">Moacyr Benedicto</label>
+      <input type="button" id="btnNorma" class="btn-norma" onClick="addNorma()">
+			<label class="lblNorma" for="btnNorma">Norma de Conti</label>
+      <input type="button" id="btnOtacilia" class="btn-otacilia" onClick="addOtacilia()">
+			<label class="lblOtacilia" for="btnOtacilia">Otacília Madureira</label>
+      <input type="button" id="btnPalmyra" class="btn-palmyra" onClick="addPalmyra()">
+			<label class="lblPalmyra" for="btnPalmyra">Palmyra Santanna</label>
+      <input type="button" id="btnPinheirinho" class="btn-pinheirinho" onClick="addPinheirinho()">
+			<label class="lblPinheirinho" for="btnPinheirinho">Pinheirinho dos Palmares</label>
+      <input type="button" id="btnSebastiana" class="btn-sebastiana" onClick="addSebastiana()">
+			<label class="lblSebastiana" for="btnSebastiana">Sebastiana Cobra</label>
+      <input type="button" id="btnSilvana" class="btn-silvana" onClick="addSilvana()">
+			<label class="lblSilvana" for="btnSilvana">Silvana Maria</label>
+      <input type="button" id="btnSonia" class="btn-sonia" onClick="addSonia()">
+			<label class="lblSonia" for="btnSonia">Sonia Maria</label>
+      <input type="button" id="btnVera" class="btn-vera" onClick="addVera()">
+			<label class="lblVera" for="btnVera">Vera Babo</label>
+      <input type="button" id="btnWaldemar" class="btn-waldemar" onClick="addWaldemar()">
+			<label class="lblWaldemar" for="btnWaldemar">Waldemar Ramos</label>
+    </div>
+    <div id="Resultados" class="tabContent">
+      <button class="btn-resultDefault" onclick="showRes()">Exibir resultados</button>
+			<br><br>
+			<button class="btn-resultDefault" onclick="download()">Salvar</button>
+			<br><br>
+      <canvas id="grafico" class="grafico"></canvas>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    arqDown = "";
+    var data = new Date();
+		var total = 0;
+		var barMax = 1;
+    var escola = {
+			alvaroGoncalves:0,
+			anaBerling:0,
+			antonioPalma:0,
+			domPedro:0,
+			elizabetePaula:0,
+			geraldoAlmeida:0,
+			helioAutusto:0,
+			helioWalter:0,
+			homeraSilva:0,
+			ilgaPusplatais:0,
+			jacyraVieira:0,
+			luciaPereira:0,
+			luziaLevina:0,
+			mariaAmelia:0,
+			mariaOfelia:0,
+			mariaRonconi:0,
+			marianaTeixeira:0,
+			mercedesKlein:0,
+			moacyrBenedicto:0,
+			normaConti:0,
+			otaciliaMadureira:0,
+			palmyraSantanna:0,
+			pinheirinhoPalmares:0,
+			sebastianaCobra:0,
+			silvanaMaria:0,
+			soniaMaria:0,
+			veraBabo:0,
+			waldemarRamos:0
+    };
+
+		function addAlvaro(){
+    	escola.alvaroGoncalves++;
+			total++;
+      chartGraph.data.datasets[0].data[0]++;
+    }
+    function addAna(){
+    	escola.anaBerling++;
+			total++;
+      chartGraph.data.datasets[0].data[1]++;
+    }
+    function addAntonio(){
+    	escola.antonioPalma++;
+			total++;
+      chartGraph.data.datasets[0].data[2]++;
+    }
+    function addDom(){
+    	escola.domPedro++;
+			total++;
+      chartGraph.data.datasets[0].data[3]++;
+    }
+    function addElizabete(){
+    	escola.elizabetePaula++;
+			total++;
+      chartGraph.data.datasets[0].data[4]++;
+    }
+    function addGeraldo(){
+    	escola.geraldoAlmeida++;
+			total++;
+      chartGraph.data.datasets[0].data[5]++;
+    }
+    function addHelioA(){
+    	escola.helioAutusto++;
+			total++;
+      chartGraph.data.datasets[0].data[6]++;
+    }
+    function addHelioW(){
+    	escola.helioWalter++;
+			total++;
+      chartGraph.data.datasets[0].data[7]++;
+    }
+    function addHomera(){
+    	escola.homeraSilva++;
+			total++;
+      chartGraph.data.datasets[0].data[8]++;
+    }
+    function addIlga(){
+    	escola.ilgaPusplatais++;
+			total++;
+      chartGraph.data.datasets[0].data[9]++;
+    }
+    function addJacyra(){
+    	escola.jacyraVieira++;
+			total++;
+      chartGraph.data.datasets[0].data[10]++;
+    }
+    function addLucia(){
+    	escola.luciaPereira++;
+			total++;
+      chartGraph.data.datasets[0].data[11]++;
+    }
+    function addLuzia(){
+    	escola.luziaLevina++;
+			total++;
+      chartGraph.data.datasets[0].data[12]++;
+    }
+    function addMariaA(){
+    	escola.mariaAmelia++;
+			total++;
+      chartGraph.data.datasets[0].data[13]++;
+    }
+    function addMariaO(){
+    	escola.mariaOfelia++;
+			total++;
+      chartGraph.data.datasets[0].data[14]++;
+    }
+    function addMariaR(){
+    	escola.mariaRonconi++;
+			total++;
+      chartGraph.data.datasets[0].data[15]++;
+    }
+    function addMariana(){
+    	escola.marianaTeixeira++;
+			total++;
+      chartGraph.data.datasets[0].data[16]++;
+    }
+    function addMercedes(){
+    	escola.mercedesKlein++;
+			total++;
+      chartGraph.data.datasets[0].data[17]++;
+    }
+    function addMoacyr(){
+    	escola.moacyrBenedicto++;
+			total++;
+      chartGraph.data.datasets[0].data[18]++;
+    }
+    function addNorma(){
+    	escola.normaConti++;
+			total++;
+      chartGraph.data.datasets[0].data[19]++;
+    }
+    function addOtacilia(){
+    	escola.otaciliaMadureira++;
+			total++;
+      chartGraph.data.datasets[0].data[20]++;
+    }
+    function addPalmyra(){
+    	escola.palmyraSantanna++;
+			total++;
+      chartGraph.data.datasets[0].data[21]++;
+    }
+    function addPinheirinho(){
+    	escola.pinheirinhoPalmares++;
+			total++;
+      chartGraph.data.datasets[0].data[22]++;
+    }
+    function addSebastiana(){
+    	escola.sebastianaCobra++;
+			total++;
+      chartGraph.data.datasets[0].data[23]++;
+    }
+    function addSilvana(){
+    	escola.silvanaMaria++;
+			total++;
+      chartGraph.data.datasets[0].data[24]++;
+    }
+    function addSonia(){
+    	escola.soniaMaria++;
+			total++;
+      chartGraph.data.datasets[0].data[25]++;
+    }
+    function addVera(){
+    	escola.veraBabo++;
+			total++;
+      chartGraph.data.datasets[0].data[26]++;
+    }
+    function addWaldemar(){
+    	escola.waldemarRamos++;
+			total++;
+      chartGraph.data.datasets[0].data[27]++;
+    }
+    function showRes(){
+			barMax = total;
+      chartGraph.update();
+    }
+		function download(){
+			var canvas = document.getElementById("grafico");
+			canvas.toBlob(function(blob) {
+    	saveAs(blob, "Resultado.png");
+			});
+		}
+    function openTab(evt, tabName) {
+    	// Declara todas as variáveis
+    	var i, tabContent, tabLinks;
+    	// Pega todos os elementos da classe "tabContent" e os esconde
+    	tabContent = document.getElementsByClassName("tabContent");
+    	for (i = 0; i < tabContent.length; i++) {
+    		tabContent[i].style.display = "none";
+    	}
+    	// Pega todos os elementos da classe "tabLinks" e remove a classe "active"
+    	tabLinks = document.getElementsByClassName("tabLinks");
+    	for (i = 0; i < tabLinks.length; i++) {
+    		tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    	}
+    	// Mostra a aba atual e adiciona a classe "active" ao botao que abriu a aba
+    	document.getElementById(tabName).style.display = "block";
+    	evt.currentTarget.className += " active";
+    }
+
+    var ctx = document.getElementsByClassName("grafico");
+		Chart.defaults.global.defaultFontSize = 15;
+    var chartGraph = new Chart(ctx, {
+      type: 'horizontalBar',
+      data:{
+        labels: [
+					"Alvaro Gonçalves",
+          "Ana Berling",
+          "Antonio Palma",
+          "Dom Pedro",
+          "Elizabete de Paula",
+          "Geraldo de Almeida",
+          "Helio Augusto",
+          "Helio Walter",
+          "Homera Silva",
+          "Ilga Pusplatais",
+          "Jacyra Vieira",
+          "Lucia Pereira",
+          "Luzia Levina",
+          "Maria Amelia",
+          "Maria Ofelia",
+          "Maria Ronconi",
+          "Mariana Teixeira",
+          "Mercedes Klein",
+          "Moacyr Benedicto",
+          "Norma de Conti",
+          "Otacilia Madureira",
+          "Palmyra Santanna",
+          "Pinheirinho dos Palmares",
+          "Sebastiana Cobra",
+          "Silvana Maria",
+          "Sonia Maria",
+          "Vera Babo",
+          "Waldemar Ramos"
+        ],
+        datasets: [
+        {
+          label: "Resultado da votação",
+          data: [
+						escola.alvaroGoncalves,
+            escola.anaBerling,
+            escola.antonioPalma,
+            escola.domPedro,
+            escola.elizabetePaula,
+            escola.geraldoAlmeida,
+            escola.helioAutusto,
+            escola.helioWalter,
+            escola.homeraSilva,
+            escola.ilgaPusplatais,
+            escola.jacyraVieira,
+            escola.luciaPereira,
+            escola.luziaLevina,
+            escola.mariaAmelia,
+            escola.mariaOfelia,
+            escola.mariaRonconi,
+            escola.marianaTeixeira,
+            escola.mercedesKlein,
+            escola.moacyrBenedicto,
+            escola.normaConti,
+            escola.otaciliaMadureira,
+            escola.palmyraSantanna,
+            escola.pinheirinhoPalmares,
+            escola.sebastianaCobra,
+            escola.silvanaMaria,
+            escola.soniaMaria,
+            escola.veraBabo,
+            escola.waldemarRamos
+          ],
+					backgroundColor: [
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)',
+						'rgba(40, 53, 113, 0.7)',
+						'rgba(46, 113, 40, 0.7)'
+            ],
+        }]
+      },
+      options:{
+        title:{
+          display: true,
+          fontSize: 20,
+          text: "RESULTADO DA VOTAÇÃO"
+        },
+        labels:{
+          fontStyle: "bold"
+        },
+				scales:{
+					xAxes:[{
+						ticks:{
+							min: 0,
+							stepSize: 1
+						}
+					}]
+				}
+      }
+    });
+</script>
+</body>
+</html>

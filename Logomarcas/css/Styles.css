@@ -1,0 +1,760 @@
+body{
+	background:url(../images/logo/bg.jpg);
+}
+h1{
+	font-family: impact, sans-serif;
+	color: #1068b3;
+	font-size: 40px;
+	text-align: center;
+}
+#site {
+	position: relative;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.5);
+}
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 21px 24px;
+	transition: 0.3s;
+}
+div.tab button:hover {
+	background-color: #ddd;
+}
+div.tab button.active {
+	background-color: #ccc;
+}
+.tabContent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.btn-alvaro{
+	background:rgba(255, 255, 255, 0) url(../images/ALVARO.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 55px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-alvaro:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-ana{
+	background:rgba(255, 255, 255, 0) url(../images/ANA-BERLING.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-ana:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-antonio{
+	background:rgba(255, 255, 255, 0) url(../images/ANTONIO-PALMA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-antonio:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-dom{
+	background:rgba(255, 255, 255, 0) url(../images/DOM-PEDRO.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-dom:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-elizabete{
+	background:rgba(255, 255, 255, 0) url(../images/ELIZABETE-DE-PAULA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-elizabete:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-geraldo{
+	background:rgba(255, 255, 255, 0) url(../images/GERALDO-DE-ALMEIDA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 55px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-geraldo:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-helioa{
+	background:rgba(255, 255, 255, 0) url(../images/HELIO-AUGUSTO.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-helioa:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-heliow{
+	background:rgba(255, 255, 255, 0) url(../images/HELIO-WALTER.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-heliow:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-homera{
+	background:rgba(255, 255, 255, 0) url(../images/HOMERA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-homera:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-ilga{
+	background:rgba(255, 255, 255, 0) url(../images/ILGA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-ilga:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-jacyra{
+	background:rgba(255, 255, 255, 0) url(../images/JACYRA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 55px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-jacyra:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-lucia{
+	background:rgba(255, 255, 255, 0) url(../images/LUCIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-lucia:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-luzia{
+	background:rgba(255, 255, 255, 0) url(../images/LUZIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-luzia:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-mariaa{
+	background:rgba(255, 255, 255, 0) url(../images/MARIA-AMELIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-mariaa:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-mariao{
+	background:rgba(255, 255, 255, 0) url(../images/MARIA-OFELIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-mariao:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-mariar{
+	background:rgba(255, 255, 255, 0) url(../images/MARIA-RONCONI.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 55px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-mariar:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-mariana{
+	background:rgba(255, 255, 255, 0) url(../images/MARIANA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-mariana:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-mercedes{
+	background:rgba(255, 255, 255, 0) url(../images/MERCEDES.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-mercedes:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-moacyr{
+	background:rgba(255, 255, 255, 0) url(../images/MOACYR.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-moacyr:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-norma{
+	background:rgba(255, 255, 255, 0) url(../images/NORMA-DI-CONTI.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-norma:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-otacilia{
+	background:rgba(255, 255, 255, 0) url(../images/OTACILIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 55px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-otacilia:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-palmyra{
+	background:rgba(255, 255, 255, 0) url(../images/PALMYRA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-palmyra:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-pinheirinho{
+	background:rgba(255, 255, 255, 0) url(../images/PINHEIRINHO.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-pinheirinho:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-sebastiana{
+	background:rgba(255, 255, 255, 0) url(../images/SEBASTIANA-COBRA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-sebastiana:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-silvana{
+	background:rgba(255, 255, 255, 0) url(../images/SILVANA-MARIA.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-silvana:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-sonia{
+	background:rgba(255, 255, 255, 0) url(../images/SONIA-MARIA.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 290px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-sonia:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-vera{
+	background:rgba(255, 255, 255, 0) url(../images/VERA-BABO.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-vera:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.btn-waldemar{
+	background:rgba(255, 255, 255, 0) url(../images/WALDEMAR-RAMOS.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width:150px;
+	height:200px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding: 90px 80px;
+	margin-left: 0px;
+	margin-right: 65px;
+	margin-bottom: 45px;
+	transition:0s 0.2s;
+}
+.btn-waldemar:active{
+	background:url(../images/logo/confirm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition:0s;
+}
+.lblAlvaro{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -213px;
+}
+.lblAna{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -190px;
+}
+.lblAntonio{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -199px;
+}
+.lblDom{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -190px;
+}
+.lblElizabete{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -211px;
+}
+.lblGeraldo{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -215px;
+}
+.lblHelioA{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblHelioW{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblHomera{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -205px;
+}
+.lblIlga{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -199px;
+}
+.lblJacyra{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -199px;
+}
+.lblLucia{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblLuzia{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblMariaA{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblMariaO{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblMariaR{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblMariana{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -205px;
+}
+.lblMercedes{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblMoacyr{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -210px;
+}
+.lblNorma{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -200px;
+}
+.lblOtacilia{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -210px;
+}
+.lblPalmyra{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -210px;
+}
+.lblPinheirinho{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -232px;
+}
+.lblSebastiana{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -205px;
+}
+.lblSilvana{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -197px;
+}
+.lblSonia{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -190px;
+}
+.lblVera{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -187px;
+}
+.lblWaldemar{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: -202px;
+}
+.btn-resultDefault {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 7px 17px 7px 17px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
